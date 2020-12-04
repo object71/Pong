@@ -1,0 +1,1 @@
+%~dp0\..\vcpkg\vcpkg.exe install raylib:x64-windows fmt:x64-windows
