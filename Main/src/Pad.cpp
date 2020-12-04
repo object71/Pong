@@ -6,6 +6,8 @@
 
 void Pad::Update()
 {
+    // TODO: Limit movement to screen
+    
     if (IsKeyDown(ControlKeyDown))
     {
         Position.y += GetFrameTime() * Speed;
