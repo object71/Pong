@@ -3,9 +3,6 @@ set(CMAKE_TOOLCHAIN_FILE ./vcpkg/scripts/buildsystems/vcpkg.cmake)
 
 project(Pong)
 
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
 find_package(raylib CONFIG REQUIRED)
 find_package(fmt CONFIG REQUIRED)
 
@@ -27,4 +24,4 @@ else()
     add_compile_definitions(NDEBUG=1)
 endif(${CMAKE_BUILD_TYPE} MATCHES Debug)
 
-add_subdirectory(Main)
+add_subdirectory(Pong)
